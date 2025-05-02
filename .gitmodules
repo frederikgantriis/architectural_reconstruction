@@ -1,0 +1,3 @@
+[submodule "lecture-notes"]
+	path = lecture-notes
+	url = git@github.com:mircealungu/reconstruction.git
