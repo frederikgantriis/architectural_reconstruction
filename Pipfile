@@ -8,6 +8,7 @@ networkx = "*"
 matplotlib = "*"
 pyvis = "*"
 plotly = "*"
+scipy = "*"
 
 [dev-packages]
 
