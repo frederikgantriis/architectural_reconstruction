@@ -1,0 +1,37 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=lightblue];
+  "zeeguu/core/model/user.py" [label="zeeguu/core/model/user.py\n(contains top class)"]
+  "zeeguu/core/test/test_tokenizer.py" [label="zeeguu/core/test/test_tokenizer.py\n(contains top class)"]
+  "zeeguu/core/model/user_article.py" [label="zeeguu/core/model/user_article.py\n(contains top class)"]
+  "zeeguu/core/model/language.py" [label="zeeguu/core/model/language.py\n(contains top class)"]
+  "zeeguu/core/test/test_scheduling.py" [label="zeeguu/core/test/test_scheduling.py\n(contains top class)"]
+  "zeeguu/core/nlp_pipeline/automatic_gec_tagging.py" [label="zeeguu/core/nlp_pipeline/automatic_gec_tagging.py\n(contains top class)"]
+  "tools/report_generator/data_extractor.py" [label="tools/report_generator/data_extractor.py\n(contains top class)"]
+  "zeeguu/core/model/video.py" [label="zeeguu/core/model/video.py\n(contains top class)"]
+  "zeeguu/core/model/feed.py" [label="zeeguu/core/model/feed.py\n(contains top class)"]
+  "zeeguu/core/word_scheduling/basicSR/basicSR.py" [label="zeeguu/core/word_scheduling/basicSR/basicSR.py\n(contains top class)"]
+  "zeeguu/core/model/article.py" [label="zeeguu/core/model/article.py\n(contains top class)"]
+  "zeeguu/core/model/bookmark.py" [label="zeeguu/core/model/bookmark.py\n(contains top class)"]
+  "zeeguu/core/test/test_bookmark.py" [label="zeeguu/core/test/test_bookmark.py\n(contains top class)"]
+  "zeeguu/core/model/user_activitiy_data.py" [label="zeeguu/core/model/user_activitiy_data.py\n(contains top class)"]
+  "zeeguu/core/language/strategies/word_history_difficulty_estimator.py" [label="zeeguu/core/language/strategies/word_history_difficulty_estimator.py\n(contains top class)"]
+  "zeeguu/core/model/user.py" -> "zeeguu/core/model/bookmark.py";
+  "zeeguu/core/model/user.py" -> "zeeguu/core/model/language.py";
+  "zeeguu/core/model/user.py" -> "zeeguu/core/model/user_article.py";
+  "zeeguu/core/model/user.py" -> "zeeguu/core/model/article.py";
+  "zeeguu/core/model/user.py" -> "zeeguu/core/word_scheduling/basicSR/basicSR.py";
+  "zeeguu/core/model/user_article.py" -> "zeeguu/core/model/user_activitiy_data.py";
+  "zeeguu/core/model/video.py" -> "zeeguu/core/model/language.py";
+  "zeeguu/core/model/feed.py" -> "zeeguu/core/model/language.py";
+  "zeeguu/core/word_scheduling/basicSR/basicSR.py" -> "zeeguu/core/model/bookmark.py";
+  "zeeguu/core/model/article.py" -> "zeeguu/core/model/user.py";
+  "zeeguu/core/model/article.py" -> "zeeguu/core/model/language.py";
+  "zeeguu/core/model/article.py" -> "zeeguu/core/model/user_article.py";
+  "zeeguu/core/model/article.py" -> "zeeguu/core/model/feed.py";
+  "zeeguu/core/model/bookmark.py" -> "zeeguu/core/model/video.py";
+  "zeeguu/core/model/bookmark.py" -> "zeeguu/core/model/user.py";
+  "zeeguu/core/model/bookmark.py" -> "zeeguu/core/model/language.py";
+  "zeeguu/core/model/bookmark.py" -> "zeeguu/core/model/article.py";
+  "zeeguu/core/model/user_activitiy_data.py" -> "zeeguu/core/model/article.py";
+}

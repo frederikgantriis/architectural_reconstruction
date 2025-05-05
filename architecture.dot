@@ -1,0 +1,19 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style=filled, fillcolor=lightblue];
+  "AutoGECTagging" [label="AutoGECTagging\nLOC: 451\nChurn: 11"];
+  "Video" [label="Video\nLOC: 247\nChurn: 47"];
+  "BookmarkTest" [label="BookmarkTest\nLOC: 276\nChurn: 63"];
+  "User" [label="User\nLOC: 681\nChurn: 95"];
+  "Feed" [label="Feed\nLOC: 218\nChurn: 22"];
+  "UserArticle" [label="UserArticle\nLOC: 257\nChurn: 53"];
+  "Article" [label="Article\nLOC: 476\nChurn: 129"];
+  "UserActivityData" [label="UserActivityData\nLOC: 387\nChurn: 36"];
+  "Language" [label="Language\nLOC: 200\nChurn: 32"];
+  "Text" [label="Text\nLOC: 179\nChurn: 32"];
+  "TokenizationTest" [label="TokenizationTest\nLOC: 350\nChurn: 18"];
+  "Bookmark" [label="Bookmark\nLOC: 586\nChurn: 80"];
+  "DataExtractor" [label="DataExtractor\nLOC: 300\nChurn: 11"];
+  "BasicSRSchedule" [label="BasicSRSchedule\nLOC: 235\nChurn: 39"];
+  "SchedulerTest" [label="SchedulerTest\nLOC: 411\nChurn: 8"];
+}
