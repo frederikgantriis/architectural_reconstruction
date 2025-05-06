@@ -2,6 +2,18 @@
 
 To reconstruct the architecture of the Zeeguu API, I followed the Symphony-inspired process outlined in the course, which separates the reconstruction into distinct stages: data gathering, knowledge inference, and information interpretation. The focus was on reverse engineering architectural views from source code and version history without relying on existing documentation.
 
+\subsection{Tools and Technologies}
+
+The reconstruction was carried out using a variety of open-source tools and libraries:
+
+\begin{itemize}
+  \item \textbf{Python \texttt{ast} module}: Used for parsing Python files to extract class definitions, inheritance relationships, and basic usage patterns.
+  \item \textbf{\texttt{git log}}: Used to compute churn, i.e., how many times each file changed over time.
+  \item \textbf{Plotly + NetworkX}: Used to create an interactive graph-based visualization of class relationships with metrics overlaid (LOC and churn).
+  \item \textbf{Graphviz (DOT format)}: Used to produce a clean, layered diagram for high-level module relationships, suitable for inclusion in a report.
+  \item \textbf{Python scripting}: Custom scripts were written to compute LOC, score classes by importance, and generate visual output.
+\end{itemize}
+
 \subsection{Data Gathering}
 
 I extracted structural and evolutionary data from the codebase using a combination of static code analysis and version control mining:
