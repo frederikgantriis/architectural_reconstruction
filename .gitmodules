@@ -4,3 +4,6 @@
 [submodule "api"]
 	path = api
 	url = git@github.com:zeeguu/api.git
+[submodule "report"]
+	path = report
+	url = git@github.com:frederikgantriis/architectural_recovery_report.git
