@@ -1,0 +1,42 @@
+@startuml ModuleView
+
+' Title and description
+title Core Zeeguu Api Module View
+caption This diagram represents the core modules of the Zeeguu API.
+
+' Define components/modules
+package "Model" {
+    [User]
+    [Bookmark]
+    [Article]
+    [User_Article]
+    [User_activity_data]
+    [Article]
+    [Feed]
+    [Video]
+    [Language]
+}
+
+package "word_scheduling" {
+    [BasicSR]
+}
+
+' Relationships between components
+[User] --> [Bookmark]
+[User] --> [User_Article] 
+[User] --> [Language]
+[User] --> [Article]
+[User] --> [BasicSR]
+[Article] --> [User]
+[Article] --> [User_Article]
+[Article] --> [Feed]
+[Article] --> [Language]
+[Bookmark] --> [User]
+[Bookmark] --> [Video]
+[Bookmark] --> [Language] 
+[User_Article] --> [User_activity_data]
+[User_activity_data] --> [Article]
+[Feed] --> [Language]
+[Video] --> [Language]
+
+@enduml
