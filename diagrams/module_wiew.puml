@@ -39,4 +39,13 @@ package "word_scheduling" {
 [Feed] --> [Language]
 [Video] --> [Language]
 
+legend
+    <b>Class Containers</b> represent one of the most important classes in the system.
+    <b>Edges</b> represent static import dependencies between files, based on Python’s module system.
+    <b>Node labels</b> indicate the file name.
+    <b>Module Containers</b> represents the module (i.e. which folder) that the classes are placed within
+endlegend
+
+
+
 @enduml
